@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor Costa | Dev</title>
+  <script src="https://kit.fontawesome.com/910bdf5efc.js" crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: Montserrat, Helvetica, sans-serif;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      font-size: 5em;
+      font-weight: 700;
+      color: #4d4d4d;
+      animation: fadeMoveTop 1s;
+      margin: 0;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      animation: fadeMoveBottom 1s;
+    }
+
+    .social a.icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      font-size: 20px;
+      color: #a6a6a6;
+      text-decoration: none;
+      transition: all .25s;
+      border-radius: 50%;
+    }
+
+    .social a:nth-child(2) {
+      margin: 0 4px;
+    }
+
+    .social a.mail {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 14px;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.08);
+      color: #a6a6a6;
+      font-weight: 700;
+      transition: all .25s;
+      border-radius: 3px;
+    }
+
+    .social a.icon:hover,
+    .social a.mail:hover {
+      background: rgba(0, 0, 0, 0.12);
+      color: #5c5c5c;
+    }
+
+    @keyframes fadeMoveTop {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeMoveBottom {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Vitor Costa</h1>
+  <div class="social">
+    <a class="icon" target="_blank" href="https://www.instagram.com/vitorcstaa/"><i class="fab fa-instagram"></i></a>
+    <a class="icon" target="_blank" href="https://wa.me/5513981508643"><i class="fab fa-whatsapp"></i></a>
+    <a class="icon" target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-costa-3668601a4/"><i class="fab fa-linkedin-in"></i></a>
+    <a class="mail" target="_blank" href="mailto:vitorcostacontato588@gmail.com">Entre em contato <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+
+</body>
+</html>
