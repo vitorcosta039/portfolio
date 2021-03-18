@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vitor Costa | Dev</title>
+  <!-- <link rel="stylesheet" href="fontawesome.css"> -->
   <script src="https://kit.fontawesome.com/910bdf5efc.js" crossorigin="anonymous"></script>
 
   <style>
@@ -22,7 +23,7 @@
       background: #f7f7f7;
     }
 
-    h1 {
+    .body-loaded h1 {
       text-align: center;
       font-size: 5em;
       font-weight: 700;
@@ -31,7 +32,7 @@
       margin: 0;
     }
 
-    .social {
+    .body-loaded .social {
       display: flex;
       align-items: center;
       margin-top: 8px;
@@ -129,6 +130,11 @@
     <a class="mail" target="_blank" href="mailto:vitorcostacontato588@gmail.com">Entre em contato <i class="fas fa-arrow-right"></i></a>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('body-loaded');
+    });
+  </script>
 
 </body>
 </html>
