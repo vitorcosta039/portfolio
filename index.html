@@ -23,6 +23,7 @@
     }
 
     h1 {
+      text-align: center;
       font-size: 5em;
       font-weight: 700;
       color: #4d4d4d;
@@ -35,6 +36,11 @@
       align-items: center;
       margin-top: 8px;
       animation: fadeMoveBottom 1s;
+    }
+
+    .social .icons {
+      display: flex;
+      align-items: center;
     }
 
     .social a.icon {
@@ -93,15 +99,33 @@
         transform: translateY(0);
       }
     }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 64px;
+      }
+
+      .social {
+        flex-direction: column;
+      }
+
+      .social a.mail {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
   </style>
 </head>
 <body>
   
   <h1>Vitor Costa</h1>
   <div class="social">
-    <a class="icon" target="_blank" href="https://www.instagram.com/vitorcstaa/"><i class="fab fa-instagram"></i></a>
-    <a class="icon" target="_blank" href="https://wa.me/5513981508643"><i class="fab fa-whatsapp"></i></a>
-    <a class="icon" target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-costa-3668601a4/"><i class="fab fa-linkedin-in"></i></a>
+    <div class="icons">
+      <a class="icon" target="_blank" href="https://www.instagram.com/vitorcstaa/"><i class="fab fa-instagram"></i></a>
+      <a class="icon" target="_blank" href="https://wa.me/5513981508643"><i class="fab fa-whatsapp"></i></a>
+      <a class="icon" target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-costa-3668601a4/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    
     <a class="mail" target="_blank" href="mailto:vitorcostacontato588@gmail.com">Entre em contato <i class="fas fa-arrow-right"></i></a>
   </div>
 
