@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
     body {
       padding: 0;
       margin: 0;
@@ -30,6 +32,24 @@
       color: #4d4d4d;
       animation: fadeMoveTop 1s;
       margin: 0;
+    }
+
+    .body-loaded h1 span {
+      position: relative;
+    }
+
+    .body-loaded h1 span:after {
+      content: 'dev';
+      display: flex;
+      position: absolute;
+      right: 4px;
+      bottom: -6px;
+      font-size: 14px;
+      font-weight: 500;
+      background: #4d4d4d;
+      color: #f7f7f7;
+      padding: 2px 6px;
+      border-radius: 2px;
     }
 
     .body-loaded .social {
@@ -84,6 +104,7 @@
         opacity: 0;
         transform: translateY(-40px);
       }
+
       100% {
         opacity: 1;
         transform: translateY(0);
@@ -95,6 +116,7 @@
         opacity: 0;
         transform: translateY(40px);
       }
+
       100% {
         opacity: 1;
         transform: translateY(0);
@@ -104,9 +126,17 @@
     @media (max-width: 576px) {
       .body-loaded h1 {
         font-size: 64px;
+        /* line-height: 50px; */
+      }
+
+      .body-loaded h1 span:after {
+        bottom: -8px;
+        font-size: 12px;
+        /* line-height: 12px; */
       }
 
       .body-loaded .social {
+        margin-top: 16px;
         flex-direction: column;
       }
 
@@ -117,17 +147,24 @@
     }
   </style>
 </head>
+
 <body>
-  
-  <h1>Vitor Costa</h1>
+
+  <h1>
+    Vitor <span>Costa</span>
+  </h1>
   <div class="social">
     <div class="icons">
       <a class="icon" target="_blank" href="https://www.instagram.com/vitorcstaa/"><i class="fab fa-instagram"></i></a>
-      <a class="icon" target="_blank" href="https://wa.me/5513981508643"><i class="fab fa-whatsapp"></i></a>
-      <a class="icon" target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-costa-3668601a4/"><i class="fab fa-linkedin-in"></i></a>
+      <a class="icon" target="_blank"
+        href="https://wa.me/5513981508643?text=Oi Vitor! Gostaria de conhecer mais sobre o seu serviço de criação de site!"><i
+          class="fab fa-whatsapp"></i></a>
+      <a class="icon" target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-costa-3668601a4/"><i
+          class="fab fa-linkedin-in"></i></a>
     </div>
-    
-    <a class="mail" target="_blank" href="mailto:vitorcostacontato588@gmail.com">Entre em contato <i class="fas fa-arrow-right"></i></a>
+
+    <a class="mail" target="_blank" href="mailto:vitorcostacontato588@gmail.com">Entre em contato <i
+        class="fas fa-arrow-right"></i></a>
   </div>
 
   <script>
@@ -137,4 +174,5 @@
   </script>
 
 </body>
+
 </html>
